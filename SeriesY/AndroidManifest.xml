@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.com.ythalorossy.seriesy"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="15" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity android:name="br.com.ythalorossy.seriesy.activity.HomeActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="br.com.ythalorossy.seriesy.activity.SerieListActivity"
+            android:label="@string/app_name"
+            android:parentActivityName="br.com.ythalorossy.seriesy.activity.HomeActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="br.com.ythalorossy.seriesy.activity.HomeActivity" />
+        </activity>
+        <activity
+            android:name="br.com.ythalorossy.seriesy.activity.SerieDetailActivity"
+            android:label="@string/title_serie_detail"
+            android:parentActivityName="br.com.ythalorossy.seriesy.activity.SerieListActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SerieListActivity" />
+        </activity>
+        <activity
+            android:name="br.com.ythalorossy.seriesy.activity.SerieFormActivity"
+            android:label="@string/title_activity_serie_add"
+            android:parentActivityName="br.com.ythalorossy.seriesy.activity.SerieListActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SerieListActivity" />
+        </activity>
+        <activity
+            android:name=".activity.GenderListActivity"
+            android:parentActivityName="br.com.ythalorossy.seriesy.activity.HomeActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="br.com.ythalorossy.seriesy.activity.HomeActivity" />
+        </activity>
+        <activity
+            android:name=".activity.GenderDetailActivity"
+            android:parentActivityName="br.com.ythalorossy.seriesy.activity.GenderListActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".GenderListActivity" />
+        </activity>
+        <activity
+            android:name=".activity.GenderFormActivity"
+            android:parentActivityName="GenderListActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".GenderListActivity" />            
+        </activity>
+    </application>
+
+</manifest>

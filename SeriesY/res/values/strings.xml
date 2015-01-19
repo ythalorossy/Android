@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SeriesY</string>
+    <string name="title_serie_detail">Serie Detail</string>
+    <string name="image_description">Image description</string>
+    <string name="add">Add</string>
+    <string name="title_activity_serie_add">Add Serie</string>
+    <string name="action_settings">Settings</string>
+    <string name="str_title">Title</string>
+    <string name="str_name">Name</string>
+    <string name="str_gender">Gender</string>
+    <string name="str_synopsis">Synopsis</string>
+    <string name="btn_save">Save</string>
+    <string name="str_cancel">Cancel</string>
+    <string name="str_edit">Edit</string>
+    <string name="str_delete">Delete</string>
+    <string name="list">List</string>
+
+</resources>

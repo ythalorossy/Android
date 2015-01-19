@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <ImageButton
+        android:id="@+id/btnSeries"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/add"
+        android:onClick="goList"
+        android:src="@drawable/ic_menu_add" />
+
+    <ImageButton
+        android:id="@+id/btnAddSerie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnSeries"
+        android:layout_below="@+id/btnSeries"
+        android:contentDescription="@string/list"
+        android:onClick="goForm"
+        android:src="@drawable/ic_menu_add" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btnAddSerie"
+        android:layout_toRightOf="@+id/btnAddSerie"
+        android:text="Add"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <ImageButton
+        android:id="@+id/btnGenders"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnAddSerie"
+        android:layout_toLeftOf="@+id/textView1"
+        android:contentDescription="@string/list"
+        android:onClick="goListGender"
+        android:src="@drawable/ic_menu_add" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btnGenders"
+        android:layout_toRightOf="@+id/btnGenders"
+        android:text="Genders"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btnSeries"
+        android:layout_alignLeft="@+id/textView1"
+        android:text="Series"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>

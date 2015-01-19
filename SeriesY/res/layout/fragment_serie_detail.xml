@@ -1,0 +1,87 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment_serie_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/container_menu"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:textAlignment="center" >
+        
+        <Button
+            android:id="@+id/btn_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:contentDescription="@string/str_edit"
+            android:src="@drawable/ic_menu_add"
+            android:text="@string/str_delete" />
+        
+         <Button
+            android:id="@+id/btn_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/btn_delete"
+            android:layout_marginRight="1dp"
+            android:contentDescription="@string/str_edit"
+            android:src="@drawable/ic_menu_add"
+            android:text="@string/str_edit" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/container_image_data"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/image_description"
+            android:src="@drawable/draw" />
+
+        <LinearLayout
+            android:id="@+id/datas"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/title"
+                style="?android:attr/textAppearanceLarge"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="#0687BB"
+                android:padding="10dp"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textIsSelectable="true" />
+
+            <TextView
+                android:id="@+id/gender"
+                style="?android:attr/textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="#29B6DB"
+                android:padding="16dp"
+                android:textIsSelectable="true" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/synopsis"
+        style="?android:attr/textAppearanceSmall"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#E5F0F1"
+        android:padding="16dp"
+        android:textIsSelectable="true" />
+
+</LinearLayout>
